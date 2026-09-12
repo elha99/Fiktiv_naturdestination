@@ -1,15 +1,19 @@
 
 
 .head-container {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
 
 }
+
+/* behöver få till logot och rubriken mer tillsammans
+*/
 
 nav ul {
     list-style-type: none;
     font-size: 1.4em;
-    gap: 20px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -24,24 +28,22 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    text-align: center;
 }
 
 .hero-image {
     max-width: 100%;
-    height: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg');
-    background-position: center;
+    height: 250px;
+    background-image: url('../images/hero.jpg');
     background-size: cover;
-    position: relative;
+    background-position: center;
+
 }
 
 .hero {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: left;
-    postion: absolute;
-
+    flex-direction: column;
+    text-align: center;
 }
 
 .hero-button {
@@ -67,5 +69,17 @@ body, html {
         display: flex;
         align-items: stretch;
         justify-content: flex-end;
+    }
+
+    .hero {
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    text-align: left;
     }
 }
