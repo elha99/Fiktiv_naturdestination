@@ -10,7 +10,7 @@
 /* behöver få till logot och rubriken mer tillsammans
 */
 
-nav ul {
+.head-container nav ul {
     list-style-type: none;
     font-size: 1.4em;
     gap: 10px;
@@ -31,15 +31,6 @@ body, html {
     text-align: center;
 }
 
-.hero-image {
-    max-width: 100%;
-    height: 250px;
-    background-image: url('../images/hero.jpg');
-    background-size: cover;
-    background-position: center;
-
-}
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -58,6 +49,71 @@ body, html {
 
 .hero-button:hover {
     background-color: #333;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: fit-content;
+    align-items: center;
+    margin: 40px;
+}
+
+.activity img {
+    width: 100%;
+}
+
+.planera-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.planera-button:hover {
+    background-color: #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.kontakt-lankar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer-kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lankar nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+
+
+@media (max-width: 767px) {
+    .hero-image {
+        max-width: 100%;
+        height: 250px;
+        background-image: url('../images/hero.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 @media (min-width: 768px) {
@@ -81,5 +137,12 @@ body, html {
     height: 50vh;
     align-items: center;
     text-align: left;
+    }
+
+    .activity {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+    flex-direction: row;
+    gap: 20px;
     }
 }
