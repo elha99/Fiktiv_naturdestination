@@ -3,8 +3,8 @@
 .head-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-
+    padding: 20px;
+    margin: 1px;
 }
 
 /* behöver få till logot och rubriken mer tillsammans
