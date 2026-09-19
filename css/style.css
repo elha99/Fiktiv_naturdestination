@@ -36,6 +36,8 @@ body, html {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin: 10px;
 }
 
 .hero-button {
@@ -58,7 +60,7 @@ body, html {
     border: 2px solid black;
     width: fit-content;
     align-items: center;
-    margin: 40px;
+    margin: 30px;
 }
 
 .activity img {
