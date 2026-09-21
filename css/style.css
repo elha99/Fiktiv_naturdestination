@@ -138,28 +138,40 @@ body, html {
 
 /*Rubriker och text*/
 
-header, main, footer {
+    header, main, footer {
     max-width: 1400px;
     margin: 0 auto;
-}
+    }
 
-h2, h3 {
+    h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5px;
-}
+        }
 
-.rubrik-1, .rubrik-2, .rubrik-3, .rubrik-4, .rubrik-5, .footer-rubrik-1 {
-    font-size: 1.5rem;
+    h3 {
+    font-size: 1.3rem;
     font-weight: bold;
-    margin: 2px;
-}
+    margin: 5px;
+        }
 
-.footer-rubrik-2, .footer-rubrik-3 {
+    h4 {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 5px;    
-}
+    }
+
+    h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 5px;
+    }
 
 /*Hero-bild på telefon*/
 
@@ -241,13 +253,13 @@ h2, h3 {
     }
 
     /*Call to action*/
-    .rubrik-5 {
+    h4 {
         text-align: left;
         font-size: 1.5rem;
         font-weight: bold;
         margin: 5px 80px;
     }
-
+    
     .desktop-text {
         display: block;
     }
