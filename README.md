@@ -11,3 +11,5 @@ Ni kan nå mig på mail:
 elha2612@student.miun.se
 
 ## Länkar till publicerade versionerna:
+[Kolla in min webbplats på Github!](https://elha99.github.io/Fiktiv_naturdestination/ )  
+[Webbplatsen finns även på Netlify](https://fiktivnaturdestination.netlify.app/)
